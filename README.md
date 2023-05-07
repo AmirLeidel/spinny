@@ -13,8 +13,8 @@ Coded using conformal geometric algebra motor interpolation as described by Belo
 
 In order to model the ribbon that is secured in $s$-direction while rotating in $r$ by $2\pi\lambda \mathrm{rad}$. We define three oriented control points using CGA rotors. 
 For this, using two rotors $R$ and $S$, describing the rotation of the center cube and the twisting of the ribbon
-$$R(\lambda) = \exp(\frac{r}{e_{123}} \pi \lambda),$$
-$$S(\lambda) = \exp(-\frac{s}{e_{123}} \frac{\pi}{2})$$
+$$\large R(\lambda) = \exp(\frac{r}{e_{123}} \pi \lambda),$$
+$$\large S(\lambda) = \exp(-\frac{s}{e_{123}} \frac{\pi}{2})$$
 and three translators
 $$T_0(\lambda) = 1- \frac{R(\lambda) 0.3 s R(\lambda)^\dagger \wedge e_\infty}{2},$$
 $$T_1(\lambda) = 1- \frac{R(\lambda) 1.0 s R(\lambda)^\dagger \wedge e_\infty}{2},$$
