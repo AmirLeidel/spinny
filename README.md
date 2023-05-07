@@ -1,12 +1,11 @@
 # spinny
 Procedurally generated animation of the anti-twister mechanism and its connection to Spin(3).
-Also known as Dirac's belt trick, a demonstration of an object that is subject to $4\pi$ or $720°$ symmetry, so it has to be rotated twice to revert to its initial state.
+Also known as Dirac's belt trick, a demonstration of an object that is subject to $4\pi$ or $720°$ symmetry, so it needs two full revolutions to revert to its initial state.
 
 Inspired by Jason Hise's animations, please check out:
 https://en.wikipedia.org/wiki/User:JasonHise
 
-
-Development of a procedurally generated animation for the anti-twister mechanism to demonstrate its connection to Spin(3).
+Coded using CGA motors. 
 
 ![Observables as quaternions](https://raw.githubusercontent.com/AmirLeidel/spinny/master/diagram1.png)
 *States of the anti-twister and their corresponding spin observables as quaternions*
