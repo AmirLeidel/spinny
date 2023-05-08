@@ -9,7 +9,7 @@ https://en.wikipedia.org/wiki/User:JasonHise
 *States of the anti-twister and their corresponding spin observables as quaternions*
 
 # How it works
-Coded using conformal geometric algebra motor interpolation as described by Belon et al (2017).
+Coded using CGA motor interpolation as described by Belon et al (2017).
 
 In order to model the ribbon that is secured in $s$-direction while rotating in $r$ by $2\pi\lambda \mathrm{rad}$. We define three oriented control points using CGA rotors. 
 For this, using two rotors $R$ and $S$, describing the rotation of the center cube and the twisting of the ribbon
