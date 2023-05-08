@@ -65,7 +65,11 @@ Which first normalizes the conformal point by dividing it with $\rho \cdot e_\in
 
 # How to it compile yourself
 After `cd` in the project folder download dependencies using
-```pip install -r requirements.txt```
+```
+{
+pip install -r requirements.txt
+}
+```
 
 
 References:
