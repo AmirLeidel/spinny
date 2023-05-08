@@ -37,22 +37,22 @@ Where $\rho_{l}(\lambda,\alpha)$ and $\rho_{r}(\lambda,\alpha)$ are its left and
 
 The full set of twelve equations (2 boundaries $\times$ 6 directions) for rotating in the $z$-axis is given by
 ```math
-\large\rho^{+ x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda, \alpha,\mathbf{s}= +e_1,\mathbf{r}=e_3)} (\pm e_2) 
+\large\rho^{+ x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda, \alpha,\mathbf{s}= +e_1,\mathbf{r}=e_3)} (\uparrow \pm e_2) 
 ```
 ```math
-\large\rho^{- x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + 1,\alpha,\mathbf{s}=-e_1,\mathbf{r}=e_3)} (\pm e_2)
+\large\rho^{- x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + 1,\alpha,\mathbf{s}=-e_1,\mathbf{r}=e_3)} (\uparrow \pm e_2)
 ```
 ```math
-\large\rho^{+ y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{3}{2} ,\alpha,\mathbf{s}=+e_2,\mathbf{r}=e_3)} (\pm e_3) 
+\large\rho^{+ y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{3}{2} ,\alpha,\mathbf{s}=+e_2,\mathbf{r}=e_3)} (\uparrow \pm e_3) 
 ```
 ```math
-\large\rho^{- y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{1}{2} ,\alpha,\mathbf{s}=-e_2,\mathbf{r}=e_3)} (\pm e_3) 
+\large\rho^{- y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{1}{2} ,\alpha,\mathbf{s}=-e_2,\mathbf{r}=e_3)} (\uparrow\pm e_3) 
 ```
 ```math
-\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,\mathbf{s}=+ e_3,\mathbf{r}=e_2)) R_{12}(-\frac{\lambda}{2})} (\pm e_1) 
+\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,\mathbf{s}=+ e_3,\mathbf{r}=e_2)) R_{12}(-\frac{\lambda}{2})} (\uparrow\pm e_1) 
 ```
 ```math
-\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,\mathbf{s}=- e_3,\mathbf{r}=e_2)) R_{12}(-\frac{\lambda}{2}) } (\pm  e_1).
+\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,\mathbf{s}=- e_3,\mathbf{r}=e_2)) R_{12}(-\frac{\lambda}{2}) } (\uparrow\pm  e_1).
 ```
 
 Where we used $\underline{M}(x)$ to denote the sandwich-product $MxM^\dagger$ of $x$. 
