@@ -33,7 +33,11 @@ which are normalized by defining $B_i(\alpha) = B_i(\alpha) / \sum_j B_j'(\alpha
 
 Finally, the interpolation motor $M(\lambda,\alpha)$ can be used to calculate the mesh of a ribbon extending in $c$ direction 
 $$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm c) M(\lambda,\alpha)^\dagger.$$
-Where $\rho_{l}(\lambda,\alpha)$ and $\rho_{r}(\lambda,\alpha)$ are the left and right boundaries respectively.
+Where $\rho_{l}(\lambda,\alpha)$ and $\rho_{r}(\lambda,\alpha)$ are its left and right boundaries respectively.
+
+The full set of equations for $z$-rotation is given by
+$$\large \rho_{l,r}(\lambda,\alpha) = \underline{M(\lambda,\alpha)} (\pm c) $$
+
 
 References:
 
