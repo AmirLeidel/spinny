@@ -8,6 +8,9 @@ https://en.wikipedia.org/wiki/User:JasonHise
 ![Observables as quaternions](https://raw.githubusercontent.com/AmirLeidel/spinny/master/diagram1.png)
 *States of the anti-twister and their corresponding spin observables as quaternions*
 
+# How to it compile yourself
+
+
 # How it works
 Coded using CGA motor interpolation as described by Belon et al (2017).
 
