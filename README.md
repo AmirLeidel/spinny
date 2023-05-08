@@ -8,9 +8,6 @@ https://en.wikipedia.org/wiki/User:JasonHise
 ![Observables as quaternions](https://raw.githubusercontent.com/AmirLeidel/spinny/master/diagram1.png)
 *States of the anti-twister and their corresponding spin observables as quaternions*
 
-# How to it compile yourself
-
-
 # How it works
 Coded using CGA ($\mathrm{Cl(4,1)}$) motor interpolation as described by Belon et al (2017).
 
@@ -65,6 +62,11 @@ The $\large\rho^{\pm i}_{l,r}(\lambda,\alpha)$ are at last projected back into $
 \downarrow\large \rho = (\frac{\rho}{\rho \cdot e_\infty} \wedge e_+ \wedge e_-)(e_+ \wedge e_-)^{-1}
 ```
 Which first normalizes the conformal point by dividing it with $\rho \cdot e_\infty$ and then rejects it from the Minkowski plane $e_+ \wedge e_-$.
+
+# How to it compile yourself
+After `cd` in the project folder download dependencies using
+```pip install -r requirements.txt```
+
 
 References:
 
