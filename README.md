@@ -68,7 +68,7 @@ After `cd` in the project folder download dependencies using
 ```
 pip install -r requirements.txt
 ```
-After that, you may use ``pyinstaller` to build an executable
+After that, you may use `pyinstaller` to build an executable
 ```
 pyinstaller ./Spinor_Cube_Ver2.2.2.py --onefile
 ```
