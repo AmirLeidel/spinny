@@ -56,6 +56,10 @@ The full set of twelve equations (2 boundaries $\times$ 6 directions) for rotati
 ```
 
 Where we used $\underline{M}(x)$ to denote the sandwich-product $MxM^\dagger$ of $x$. 
+The $\large\rho^{\pm i}_{l,r}(\lambda,\alpha)$ are at last projected back into $\mathbb{R^3}$ by using
+```math
+\downarrow \rho = (\frac{\rho}{\rho \cdot e_\infty} \wedge e_+ \wedge e_-)(\wedge e_+ \wedge e_-)^{-1}
+```
 
 References:
 
