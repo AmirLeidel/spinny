@@ -12,7 +12,7 @@ https://en.wikipedia.org/wiki/User:JasonHise
 
 
 # How it works
-Coded using CGA motor interpolation as described by Belon et al (2017).
+Coded using CGA ($\mathrm{Cl(4,1)}$) motor interpolation as described by Belon et al (2017).
 
 In order to model the ribbon that is secured in $\mathbf{s}$-direction while rotating in $\mathbf{r}$ by $2\pi\cdot\lambda \mathrm{rad}$. We define three oriented control points using CGA rotors. 
 For this, using two rotors $R$ and $S$, describing the rotation of the center cube and the twisting of the ribbon
@@ -26,13 +26,14 @@ we define the motors of oriented control points as
 $$\large M_0(\lambda) = T_0(\lambda) R(\lambda) S $$
 $$\large M_1(\lambda) = T_1(\lambda) R(\lambda) S $$
 $$\large M_2(\lambda) = T_2 $$
-Which can be linear-interpolated using motor logarithms:
+Which can be interpolated linearly using motor logarithms:
 $$\large M(\lambda,\alpha) = \exp(\sum_i B_i(\alpha) \log(M_i(\lambda)))$$
 Where $\alpha \in \left[0,1\right]$ is the interpolation parameter along the ribbon originating from the center cube face. And $B_i(\alpha)$ are weight functions defined using
+$$ B_i(\alpha) = B_i'(\alpha) / \sum_j B_j'(\alpha) $$
+which is normalizing 
 $$\large B_1'(\alpha) = (1-\alpha)^2,$$
 $$\large B_2'(\alpha) = 10 \alpha^2 (1-\alpha)^4,$$
-$$\large B_3'(\alpha) = \alpha^3$$
-which are normalized by defining $B_i(\alpha) = B_i'(\alpha) / \sum_j B_j'(\alpha)$.
+$$\large B_3'(\alpha) = \alpha^3$$.
 
 Finally, the interpolation motor $M(\lambda,\alpha)$ can be used to calculate the mesh of a ribbon extending in $\mathbf{c}$ direction 
 $$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm \uparrow \mathbf{c}) M(\lambda,\alpha)^\dagger.$$
@@ -59,7 +60,7 @@ The full set of twelve equations (2 boundaries $\times$ 6 directions) for rotati
 ```
 
 Where we used $\underline{M}(x)$ to denote the sandwich-product $MxM^\dagger$ of $x$. 
-The $\large\rho^{\pm i}_{l,r}(\lambda,\alpha)$ are at last projected back into $\mathbb{R^3}$ by using
+The $\large\rho^{\pm i}_{l,r}(\lambda,\alpha)$ are at last projected back into $$\mathrm{Cl(3,0)}$$ by using
 ```math
 \downarrow\large \rho = (\frac{\rho}{\rho \cdot e_\infty} \wedge e_+ \wedge e_-)(e_+ \wedge e_-)^{-1}
 ```
