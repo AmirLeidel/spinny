@@ -32,7 +32,7 @@ $$\large B_3'(\alpha) = \alpha^3$$
 which are normalized by defining $B_i(\alpha) = B_i(\alpha) / \sum_j B_j'(\alpha)$.
 
 Finally, the interpolation motor $M(\lambda,\alpha)$ can be used to calculate the mesh of a ribbon extending in $\mathbf{c}$ direction 
-$$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm \aparrow \mathbf{c}) M(\lambda,\alpha)^\dagger.$$
+$$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm \uparrow \mathbf{c}) M(\lambda,\alpha)^\dagger.$$
 Where $\rho_{l}(\lambda,\alpha)$ and $\rho_{r}(\lambda,\alpha)$ are its left and right boundaries respectively and we used the up-projection $\uparrow \mathbf{c}$ for the conformal representation defined by $\mathbf{c} = \mathbf{c} + \frac{1}{2}\mathbf{c}^2 e_\infty + e_o $.
 
 The full set of twelve equations (2 boundaries $\times$ 6 directions) for rotating in the $z$-axis is given by
