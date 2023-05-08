@@ -11,14 +11,14 @@ https://en.wikipedia.org/wiki/User:JasonHise
 # How it works
 Coded using CGA motor interpolation as described by Belon et al (2017).
 
-In order to model the ribbon that is secured in $s$-direction while rotating in $r$ by $2\pi\lambda \mathrm{rad}$. We define three oriented control points using CGA rotors. 
+In order to model the ribbon that is secured in $\mathbf{s}$-direction while rotating in $\mathbf{r}$ by $2\pi\cdot\lambda \mathrm{rad}$. We define three oriented control points using CGA rotors. 
 For this, using two rotors $R$ and $S$, describing the rotation of the center cube and the twisting of the ribbon
-$$\large R(\lambda) = \exp(\frac{r}{e_{123}} \pi \lambda),$$
-$$\large S(\lambda) = \exp(-\frac{s}{e_{123}} \frac{\pi}{2})$$
+$$\large R(\lambda) = \exp(\frac{\mathbf{r}}{e_{123}} \pi \lambda),$$
+$$\large S(\lambda) = \exp(-\frac{\mathbf{s}}{e_{123}} \frac{\pi}{2})$$
 and three translators
-$$\large T_0(\lambda) = 1- \frac{R(\lambda) 0.3 s R(\lambda)^\dagger \wedge e_\infty}{2},$$
-$$\large T_1(\lambda) = 1- \frac{R(\lambda) 1.0 s R(\lambda)^\dagger \wedge e_\infty}{2},$$
-$$\large T_2 = 1- \frac{2.0 s \wedge e_\infty}{2} $$
+$$\large T_0(\lambda) = 1- \frac{R(\lambda) 0.3 \mathbf{s} R(\lambda)^\dagger \wedge e_\infty}{2},$$
+$$\large T_1(\lambda) = 1- \frac{R(\lambda) 1.0 \mathbf{s} R(\lambda)^\dagger \wedge e_\infty}{2},$$
+$$\large T_2 = 1- \frac{2.0 \mathbf{s} \wedge e_\infty}{2} $$
 we define the motors of oriented control points as
 $$\large M_0(\lambda) = T_0(\lambda) R(\lambda) S(\lambda) $$
 $$\large M_1(\lambda) = T_1(\lambda) R(\lambda) S(\lambda) $$
@@ -31,31 +31,31 @@ $$\large B_2'(\alpha) = 10 \alpha^2 (1-\alpha)^4,$$
 $$\large B_3'(\alpha) = \alpha^3$$
 which are normalized by defining $B_i(\alpha) = B_i(\alpha) / \sum_j B_j'(\alpha)$.
 
-Finally, the interpolation motor $M(\lambda,\alpha)$ can be used to calculate the mesh of a ribbon extending in $c$ direction 
-$$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm c) M(\lambda,\alpha)^\dagger.$$
-Where $\rho_{l}(\lambda,\alpha)$ and $\rho_{r}(\lambda,\alpha)$ are its left and right boundaries respectively.
+Finally, the interpolation motor $M(\lambda,\alpha)$ can be used to calculate the mesh of a ribbon extending in $\mathbf{c}$ direction 
+$$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm \aparrow \mathbf{c}) M(\lambda,\alpha)^\dagger.$$
+Where $\rho_{l}(\lambda,\alpha)$ and $\rho_{r}(\lambda,\alpha)$ are its left and right boundaries respectively and we used the up-projection $\uparrow \mathbf{c}$ for the conformal representation defined by $\mathbf{c} = \mathbf{c} + \frac{1}{2}\mathbf{c}^2 e_\infty + e_o $.
 
 The full set of twelve equations (2 boundaries $\times$ 6 directions) for rotating in the $z$-axis is given by
 ```math
-\large\rho^{+ x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda, \alpha,s= +e_1,r=e_3)} (\pm c) 
+\large\rho^{+ x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda, \alpha,\mathbf{s}= +e_1,\mathbf{r}=e_3)} (\pm e_2) 
 ```
 ```math
-\large\rho^{- x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + 1,\alpha,s=-e_1,r=e_3)} (\pm c)
+\large\rho^{- x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + 1,\alpha,\mathbf{s}=-e_1,\mathbf{r}=e_3)} (\pm e_2)
 ```
 ```math
-\large\rho^{+ y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{3}{2} ,\alpha,s=+e_2,r=e_3)} (\pm c) 
+\large\rho^{+ y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{3}{2} ,\alpha,\mathbf{s}=+e_2,\mathbf{r}=e_3)} (\pm e_3) 
 ```
 ```math
-\large\rho^{- y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{1}{2} ,\alpha,s=-e_2,r=e_3)} (\pm c) 
+\large\rho^{- y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{1}{2} ,\alpha,\mathbf{s}=-e_2,\mathbf{r}=e_3)} (\pm e_3) 
 ```
 ```math
-\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,s=+ e_3,r=e_2)) R_{12}(-\frac{\lambda}{2})} (\pm c) 
+\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,\mathbf{s}=+ e_3,\mathbf{r}=e_2)) R_{12}(-\frac{\lambda}{2})} (\pm e_1) 
 ```
 ```math
-\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,s=- e_3,r=e_2)) R_{12}(-\frac{\lambda}{2}) } (\pm  c).
+\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,\mathbf{s}=- e_3,\mathbf{r}=e_2)) R_{12}(-\frac{\lambda}{2}) } (\pm  e_1).
 ```
 
-Where we used $\underline{M}(x)$ to denote the sandwich-product $MxM^\dagger$ of $x$.
+Where we used $\underline{M}(x)$ to denote the sandwich-product $MxM^\dagger$ of $x$. 
 
 References:
 
