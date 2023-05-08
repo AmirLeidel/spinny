@@ -45,9 +45,9 @@ $$\large\rho^{+ y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{3}{2} ,\
 
 $$\large\rho^{- y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{1}{2} ,\alpha,s=-e_2,r=e_3)} (\pm c) $$
 
-$$\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,s=+ e_3,r=e_2))} (\pm c) $$
+$$\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,s=+ e_3,r=e_2)) R_{12}(\frac{-\lambda}{2})} (\pm c) $$
 
-$$\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,s=- e_3,r=e_2))} (\pm R_{12}(\frac{-\lambda}{2}) c R_{12}(\frac{-\lambda}{2})^\dagger).$$
+$$\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,s=- e_3,r=e_2)) R_{12}(\frac{-\lambda}{2}) } (\pm  c).$$
 
 Where we used $\underline{M}(x)$ to denote the sandwich-product $MxM^\dagger$ of $x$.
 
