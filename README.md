@@ -39,13 +39,21 @@ The full set of twelve equations (2 boundaries $\times$ 6 directions) for rotati
 ```math
 \large\rho^{+ x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda, \alpha,s= +e_1,r=e_3)} (\pm c) 
 ```
-$$\large\rho^{- x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + 1,\alpha,s=-e_1,r=e_3)} (\pm c)$$
-
-$$\large\rho^{+ y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{3}{2} ,\alpha,s=+e_2,r=e_3)} (\pm c) $$
-$$\large\rho^{- y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{1}{2} ,\alpha,s=-e_2,r=e_3)} (\pm c) $$
-
-$$\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,s=+ e_3,r=e_2)) R_{12}(\frac{-\lambda}{2})} (\pm c) $$
-$$\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,s=- e_3,r=e_2)) R_{12}(\frac{-\lambda}{2}) } (\pm  c).$$
+```math
+\large\rho^{- x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + 1,\alpha,s=-e_1,r=e_3)} (\pm c)
+```
+```math
+\large\rho^{+ y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{3}{2} ,\alpha,s=+e_2,r=e_3)} (\pm c) 
+```
+```math
+\large\rho^{- y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda + \frac{1}{2} ,\alpha,s=-e_2,r=e_3)} (\pm c) 
+```
+```math
+\large\rho^{+ z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{1}{2},\alpha,s=+ e_3,r=e_2)) R_{12}(\frac{-\lambda}{2})} (\pm c) 
+```
+```math
+\large\rho^{- z}_{l,r}(\lambda,\alpha) = \underline{R_{12}(\frac{\lambda}{2})M(\frac{3}{2},\alpha,s=- e_3,r=e_2)) R_{12}(\frac{-\lambda}{2}) } (\pm  c).
+```
 
 Where we used $\underline{M}(x)$ to denote the sandwich-product $MxM^\dagger$ of $x$.
 
