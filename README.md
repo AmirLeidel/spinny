@@ -29,7 +29,7 @@ Where $\alpha \in \left[0,1\right]$ is the interpolation parameter along the rib
 $$\large B_1'(\alpha) = (1-\alpha)^2,$$
 $$\large B_2'(\alpha) = 10 \alpha^2 (1-\alpha)^4,$$
 $$\large B_3'(\alpha) = \alpha^3$$
-which are normalized by defining $B_i(\alpha) = B_i(\alpha) / \sum_j B_j'(\alpha)$.
+which are normalized by defining $B_i(\alpha) = B_i'(\alpha) / \sum_j B_j'(\alpha)$.
 
 Finally, the interpolation motor $M(\lambda,\alpha)$ can be used to calculate the mesh of a ribbon extending in $\mathbf{c}$ direction 
 $$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm \uparrow \mathbf{c}) M(\lambda,\alpha)^\dagger.$$
