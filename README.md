@@ -23,7 +23,7 @@ we define the motors of oriented control points as
 $$\large M_0(\lambda) = T_0(\lambda) R(\lambda) S(\lambda) $$
 $$\large M_1(\lambda) = T_1(\lambda) R(\lambda) S(\lambda) $$
 $$\large M_2(\lambda) = T_2 $$
-Which can be interpolated by motor logarithms:
+Which can be linear-interpolated using motor logarithms:
 $$\large M(\lambda,\alpha) = \exp(\sum_i B_i(\alpha) \log(M_i(\lambda)))$$
 Where $\alpha \in \left[0,1\right]$ is the interpolation parameter along the ribbon originating from the center cube face. And $B_i(\alpha)$ are weight functions defined using
 $$\large B_1'(\alpha) = (1-\alpha)^2,$$
