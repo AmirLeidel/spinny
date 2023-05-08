@@ -29,7 +29,7 @@ $$\large M_2(\lambda) = T_2 $$
 Which can be interpolated linearly using motor logarithms:
 $$\large M(\lambda,\alpha) = \exp(\sum_i B_i(\alpha) \log(M_i(\lambda)))$$
 Where $\alpha \in \left[0,1\right]$ is the interpolation parameter along the ribbon originating from the center cube face. And $B_i(\alpha)$ are weight functions defined using
-$$B_i(\alpha) = B_i'(\alpha) / \sum_j B_j'(\alpha) $$
+$$\large B_i(\alpha) = B_i'(\alpha) / \sum_j B_j'(\alpha) $$
 which is normalizing 
 $$\large B_1'(\alpha) = (1-\alpha)^2,$$
 $$\large B_2'(\alpha) = 10 \alpha^2 (1-\alpha)^4,$$
