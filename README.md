@@ -14,14 +14,14 @@ Coded using CGA motor interpolation as described by Belon et al (2017).
 In order to model the ribbon that is secured in $\mathbf{s}$-direction while rotating in $\mathbf{r}$ by $2\pi\cdot\lambda \mathrm{rad}$. We define three oriented control points using CGA rotors. 
 For this, using two rotors $R$ and $S$, describing the rotation of the center cube and the twisting of the ribbon
 $$\large R(\lambda) = \exp(\frac{\mathbf{r}}{e_{123}} \pi \lambda),$$
-$$\large S(\lambda) = \exp(-\frac{\mathbf{s}}{e_{123}} \frac{\pi}{2})$$
+$$\large S = \exp(-\frac{\mathbf{s}}{e_{123}} \frac{\pi}{2})$$
 and three translators
 $$\large T_0(\lambda) = 1- \frac{R(\lambda) 0.3 \mathbf{s} R(\lambda)^\dagger \wedge e_\infty}{2},$$
 $$\large T_1(\lambda) = 1- \frac{R(\lambda) 1.0 \mathbf{s} R(\lambda)^\dagger \wedge e_\infty}{2},$$
 $$\large T_2 = 1- \frac{2.0 \mathbf{s} \wedge e_\infty}{2} $$
 we define the motors of oriented control points as
-$$\large M_0(\lambda) = T_0(\lambda) R(\lambda) S(\lambda) $$
-$$\large M_1(\lambda) = T_1(\lambda) R(\lambda) S(\lambda) $$
+$$\large M_0(\lambda) = T_0(\lambda) R(\lambda) S $$
+$$\large M_1(\lambda) = T_1(\lambda) R(\lambda) S $$
 $$\large M_2(\lambda) = T_2 $$
 Which can be linear-interpolated using motor logarithms:
 $$\large M(\lambda,\alpha) = \exp(\sum_i B_i(\alpha) \log(M_i(\lambda)))$$
