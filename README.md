@@ -36,8 +36,10 @@ $$\large \rho_{l,r}(\lambda,\alpha) = M(\lambda,\alpha) (\pm c) M(\lambda,\alpha
 Where $\rho_{l}(\lambda,\alpha)$ and $\rho_{r}(\lambda,\alpha)$ are its left and right boundaries respectively.
 
 The full set of twelve equations (2 boundaries $\times$ 2 directions $\times$ 3 coordinates) for rotating in the $z$-axis is given by
-$$\large \rho^{\pm x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda = \frac{1}{2} \pm \frac{1}{2},\alpha,s=\pm e_1,r=e_3)} (\pm c) $$
+$$\large \rho^{\pm x}_{l,r}(\lambda,\alpha) = \underline{M(\lambda = \frac{1}{2} \pm \frac{1}{2},\alpha,s=\pm e_1,r=e_3)} (\pm c)$$
+
 $$\large \rho^{\pm y}_{l,r}(\lambda,\alpha) = \underline{M(\lambda = 1 \pm \frac{1}{2} ,\alpha,s=\pm e_2,r=e_3)} (\pm c) $$
+
 $$\large \rho^{\pm z}_{l,r}(\lambda,\alpha) = \underline{M(\lambda = 1 \mp \frac{1}{2},\alpha,s=\pm e_2,r=e_3))} (\pm c) $$
 
 References:
