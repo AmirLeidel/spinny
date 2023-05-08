@@ -60,7 +60,7 @@ The $\large\rho^{\pm i}_{l,r}(\lambda,\alpha)$ are at last projected back into $
 ```math
 \downarrow\large \rho = (\frac{\rho}{\rho \cdot e_\infty} \wedge e_+ \wedge e_-)(e_+ \wedge e_-)^{-1}
 ```
-Which first normalizes the conformal point using $\rho \cdot e_\infty$ and then rejects it from the Minkowski plane $e_+ \wedge e_-$.
+Which first normalizes the conformal point by dividing it with $\rho \cdot e_\infty$ and then rejects it from the Minkowski plane $e_+ \wedge e_-$.
 
 References:
 
